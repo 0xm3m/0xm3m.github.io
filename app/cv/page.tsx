@@ -1,4 +1,4 @@
-import PDFViewer from '@/components/PDFViewer'
+import PDFViewer from '../components/PDFViewer'
 
 export default function CVPage() {
   return (
