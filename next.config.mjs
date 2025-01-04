@@ -8,5 +8,4 @@ const nextConfig = {
   // basePath: '/hacker-portfolio' // Remove this line
 }
 
-module.exports = nextConfig
-
+export default nextConfig;
