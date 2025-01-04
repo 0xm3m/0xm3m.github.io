@@ -15,11 +15,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
-          cache: "yarn"
+          node-version: '18'
+          cache: 'yarn'
 
       - name: Clear Yarn cache
-        run: yarn cache clean
+        run: yarn cache clean    
 
       - name: Install dependencies
         run: yarn install
@@ -30,6 +30,8 @@ jobs:
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
 
-      - name: Publish to GitHub Pages 🚀
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.PORTFOLIO }}
+          publish_dir: ./out
