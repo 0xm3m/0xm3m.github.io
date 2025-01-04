@@ -16,7 +16,7 @@ const Navigation = () => {
             <Link href="/blog" className="hover:text-green-400 transition-colors">Blog</Link>
           </li>
           <li>
-            <Link href="/cv.pdf" className="hover:text-green-400 transition-colors" target="_blank" rel="noopener noreferrer">
+            <Link href="/cv" className="hover:text-green-400 transition-colors" target="_blank" rel="noopener noreferrer">
               CV
             </Link>
           </li>
