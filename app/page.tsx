@@ -7,19 +7,19 @@ export default function Home() {
     <div className="space-y-16">
       <section className="text-center space-y-4">
         <h1 className="text-5xl font-bold mb-4 animate-pulse">
-          CyberSentinel
+          0xm3m
         </h1>
         <p className="text-xl text-gray-400">
           Ethical Hacker | Security Researcher | Digital Guardian
         </p>
         <div className="flex justify-center space-x-4">
-          <a href="https://github.com/cybersentinel" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+          <a href="https://github.com/0xm3m" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
             <Github className="w-6 h-6" />
           </a>
-          <a href="https://linkedin.com/in/cybersentinel" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+          <a href="https://linkedin.com/in/gnanaraj-mauviel/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
             <Linkedin className="w-6 h-6" />
           </a>
-          <a href="https://twitter.com/cybersentinel" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+          <a href="https://twitter.com/0xm3m" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
             <Twitter className="w-6 h-6" />
           </a>
         </div>
@@ -28,14 +28,14 @@ export default function Home() {
       <div className="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-12">
         <Image
           src="/placeholder.svg?height=300&width=300"
-          alt="CyberSentinel profile picture"
+          alt="0xm3m profile picture"
           width={300}
           height={300}
           className="rounded-full border-4 border-green-500"
         />
         <div className="space-y-6 max-w-2xl">
           <p className="text-lg">
-            Greetings, I'm Alex "CyberSentinel" Johnson, a passionate ethical hacker and cybersecurity researcher with over a decade of experience in the digital trenches. My mission: to uncover vulnerabilities, fortify digital bastions, and make the vast cyberspace a safer realm for all who traverse it.
+            Greetings, I'm Gnanaraj "0xm3m" Mauviel, a passionate ethical hacker and cybersecurity researcher with over a decade of experience in the digital trenches. My mission: to uncover vulnerabilities, fortify digital bastions, and make the vast cyberspace a safer realm for all who traverse it.
           </p>
           <p className="text-lg">
             Armed with a keyboard and an insatiable curiosity, I've dedicated my career to staying one step ahead of cyber adversaries. From safeguarding critical infrastructure to securing the Internet of Things, I'm constantly pushing the boundaries of what's possible in cybersecurity.

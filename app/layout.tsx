@@ -9,8 +9,8 @@ const spaceMono = Space_Mono({
 })
 
 export const metadata = {
-  title: 'CyberSentinel | Ethical Hacker & Security Researcher',
-  description: 'Portfolio of Alex "CyberSentinel" Johnson, a leading ethical hacker and security researcher, uncovering vulnerabilities to make the digital world safer.',
+  title: '0xm3m | Ethical Hacker & Security Researcher',
+  description: 'Portfolio of Gnanaraj "0xm3m" Mauviel, ethical hacker and security researcher.',
 }
 
 export default function RootLayout({
@@ -27,7 +27,7 @@ export default function RootLayout({
             {children}
           </main>
           <footer className="bg-gray-900 text-center py-4">
-            <p>&copy; {new Date().getFullYear()} CyberSentinel. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} 0xm3m. All rights reserved.</p>
           </footer>
         </div>
       </body>

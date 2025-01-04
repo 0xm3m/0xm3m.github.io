@@ -6,7 +6,7 @@ const Navigation = () => {
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-green-500 hover:text-green-400 transition-colors">
           <span className="mr-2">&lt;/&gt;</span>
-          CyberSentinel
+          0xm3m
         </Link>
         <ul className="flex space-x-6">
           <li>
