@@ -10,7 +10,7 @@ export default function Home() {
           0xm3m
         </h1>
         <p className="text-xl text-gray-400">
-          Ethical Hacker | Security Researcher | Digital Guardian
+          Security Researcher
         </p>
         <div className="flex justify-center space-x-4">
           <a href="https://github.com/0xm3m" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
