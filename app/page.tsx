@@ -4,14 +4,28 @@ import { Github, Linkedin, Twitter } from 'lucide-react'
 export default function About() {
   return (
     <div className="space-y-12">
-      <section className="text-center">
+      <section className="text-center space-y-4">
         <h1 className="text-4xl font-bold mb-4">0xm3m</h1>
         <p className="text-xl text-gray-400">Security Researcher</p>
+        <div className="flex justify-center space-x-4">
+          <a href="https://github.com/0xm3m" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+            <Github className="w-6 h-6" />
+          </a>
+          <a href="https://linkedin.com/in/gnanaraj-mauviel/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+            <Linkedin className="w-6 h-6" />
+          </a>
+          <a href="https://twitter.com/0xm3m" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+            <Twitter className="w-6 h-6" />
+          </a>
+          <a href="https://app.hackthebox.com/profile/660398" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+            <HackTheBox className="w-6 h-6" />
+          </a>
+        </div>
       </section>
 
       <div className="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-12">
         <Image
-          src="../0xm3m.jpeg?height=300&width=300"
+          src="/0xm3m.jpeg?height=300&width=300"
           alt="0xm3m profile picture"
           width={300}
           height={300}
@@ -33,17 +47,6 @@ export default function About() {
               When I'm not diving into code or hunting for vulnerabilities, I'm actively contributing to the cybersecurity community through blog posts, conference talks, and mentoring aspiring security professionals.
             </p>
           </section>
-          <div className="flex space-x-4">
-            <a href="https://github.com/0xm3m" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-              <Github className="w-6 h-6" />
-            </a>
-            <a href="https://linkedin.com/in/gnanaraj-mauviel/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-              <Linkedin className="w-6 h-6" />
-            </a>
-            <a href="https://twitter.com/0xm3m" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-              <Twitter className="w-6 h-6" />
-            </a>
-          </div>
         </div>
       </div>
 
