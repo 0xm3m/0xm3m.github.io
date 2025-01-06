@@ -2,6 +2,17 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Github, Linkedin, Twitter, Terminal, Shield, Cpu, Zap } from 'lucide-react'
 
+interface SocialLinkProps {
+  href: string;
+  icon: React.ReactNode;
+}
+
+const SocialLink: React.FC<SocialLinkProps> = ({ href, icon }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+    {icon}
+  </a>
+);
+
 export default function Home() {
   return (
     <div className="space-y-16">
@@ -28,39 +39,37 @@ export default function Home() {
           className="rounded-full border-4 border-green-500"
         />
         <div className="space-y-6 max-w-2xl">
-          <p className="text-base md:text-lg">
-            Greetings, I'm Gnanaraj "0xm3m" Mauviel, a passionate ethical hacker and cybersecurity researcher with over a decade of experience in the digital trenches. My mission: to uncover vulnerabilities, fortify digital bastions, and make the vast cyberspace a safer realm for all who traverse it.
+          <p className="text-base md:text-lg text-gray-400">
+            Welcome to my portfolio! I am a passionate security researcher with a focus on cyber defense and ethical hacking.
           </p>
-          <p className="text-base md:text-lg">
-            Armed with a keyboard and an insatiable curiosity, I've dedicated my career to staying one step ahead of cyber adversaries. From safeguarding critical infrastructure to securing the Internet of Things, I'm constantly pushing the boundaries of what's possible in cybersecurity.
-          </p>
+          <div className="space-y-4">
+            <SkillCard
+              icon={<Terminal className="w-6 h-6 text-green-500" />}
+              title="Penetration Testing"
+              description="Expert in identifying and exploiting vulnerabilities in systems and networks."
+            />
+            <SkillCard
+              icon={<Shield className="w-6 h-6 text-green-500" />}
+              title="Incident Response"
+              description="Experienced in responding to and mitigating security incidents."
+            />
+            <SkillCard
+              icon={<Cpu className="w-6 h-6 text-green-500" />}
+              title="Reverse Engineering"
+              description="Skilled in analyzing and understanding malware and other malicious code."
+            />
+            <SkillCard
+              icon={<Zap className="w-6 h-6 text-green-500" />}
+              title="Cyber Threat Intelligence"
+              description="Proficient in gathering and analyzing threat intelligence to protect against cyber attacks."
+            />
+          </div>
         </div>
       </div>
 
-      <section className="bg-gray-900 p-6 md:p-8 rounded-lg shadow-xl">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">Cyber Chronicles</h2>
-        <div className="space-y-8">
-          <TimelineItem
-            title="Lead Security Architect | QuantumShield Inc."
-            date="2020 - Present"
-            description="Orchestrating digital defenses for Fortune 500 companies, weaving an impenetrable web of security protocols and cutting-edge technologies."
-          />
-          <TimelineItem
-            title="Cyber Threat Hunter | ByteGuard Solutions"
-            date="2017 - 2020"
-            description="Prowled through digital landscapes, tracking down elusive threats and neutralizing potential cyber catastrophes before they could materialize."
-          />
-          <TimelineItem
-            title="Penetration Tester | CyberNinja Consulting"
-            date="2014 - 2017"
-            description="Infiltrated systems with precision and stealth, exposing vulnerabilities and fortifying defenses against the dark arts of cyber warfare."
-          />
-        </div>
-      </section>
-
-      <section className="bg-gray-900 p-6 md:p-8 rounded-lg shadow-xl">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">Digital Badges of Honor</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <section>
+        <h2 className="text-2xl md:text-3xl font-bold mb-4">Certifications</h2>
+        <div className="space-y-4">
           <CertificationCard
             title="Master of Cyber Defense"
             certification="GIAC Security Expert (GSE)"
@@ -93,12 +102,6 @@ export default function Home() {
   )
 }
 
-const SocialLink = ({ href, icon }) => (
-  <a href={href} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-    {icon}
-  </a>
-)
-
 const SkillCard = ({ icon, title, description }) => (
   <div className="bg-gray-800 p-4 rounded-lg flex items-start space-x-4">
     {icon}
@@ -109,22 +112,12 @@ const SkillCard = ({ icon, title, description }) => (
   </div>
 )
 
-const TimelineItem = ({ title, date, description }) => (
-  <div className="relative pl-8 pb-8 border-l-2 border-green-500">
-    <div className="absolute left-[-8px] top-0 w-4 h-4 bg-green-500 rounded-full"></div>
-    <h3 className="text-lg md:text-xl font-semibold mb-2">{title}</h3>
-    <p className="text-gray-400 mb-2 text-sm md:text-base">{date}</p>
-    <p className="text-gray-300 text-sm md:text-base">{description}</p>
-  </div>
-)
-
 const CertificationCard = ({ title, certification, progress }) => (
-  <div className="bg-gray-800 p-6 rounded-lg transform hover:scale-105 transition-transform">
+  <div className="bg-gray-800 p-4 rounded-lg">
     <h3 className="text-lg md:text-xl font-semibold mb-2">{title}</h3>
     <p className="text-gray-400 text-sm md:text-base">{certification}</p>
-    <div className="mt-4 w-full bg-gray-700 rounded-full h-2">
-      <div className="bg-green-500 h-2 rounded-full" style={{width: `${progress}%`}}></div>
+    <div className="w-full bg-gray-700 rounded-full h-2.5 mt-2">
+      <div className="bg-green-500 h-2.5 rounded-full" style={{ width: `${progress}%` }}></div>
     </div>
   </div>
 )
-
