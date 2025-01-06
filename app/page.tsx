@@ -133,23 +133,3 @@ export default function Home() {
     </div>
   )
 }
-
-const SkillCard: React.FC<{ icon: React.ReactNode; title: string; description: string }> = ({ icon, title, description }) => (
-  <div className="bg-gray-800 p-4 rounded-lg flex items-start space-x-4">
-    {icon}
-    <div>
-      <h3 className="text-lg md:text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-gray-400 text-sm md:text-base">{description}</p>
-    </div>
-  </div>
-)
-
-const CertificationCard: React.FC<{ title: string; certification: string; progress: number }> = ({ title, certification, progress }) => (
-  <div className="bg-gray-800 p-4 rounded-lg">
-    <h3 className="text-lg md:text-xl font-semibold mb-2">{title}</h3>
-    <p className="text-gray-400 text-sm md:text-base">{certification}</p>
-    <div className="w-full bg-gray-700 rounded-full h-2.5 mt-2">
-      <div className="bg-green-500 h-2.5 rounded-full" style={{ width: `${progress}%` }}></div>
-    </div>
-  </div>
-)
