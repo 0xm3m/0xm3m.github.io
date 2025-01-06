@@ -59,6 +59,14 @@ export default function Home() {
           <SocialLink href="https://github.com/0xm3m" icon={<Github className="w-6 h-6" />} />
           <SocialLink href="https://linkedin.com/in/gnanaraj-mauviel/" icon={<Linkedin className="w-6 h-6" />} />
           <SocialLink href="https://twitter.com/0xm3m" icon={<Twitter className="w-6 h-6" />} />
+          <SocialLink 
+            href="https://app.hackthebox.com/profile/660398" 
+            icon={
+              <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M11.9959 0L5.71703 3.60131V10.8047L0 14.0601V21.2615L6.27804 24.8622L12 21.2615L17.7219 24.8622L24 21.2615V14.0601L18.2829 10.8047V3.60131L11.9959 0ZM18.2829 14.9502L12.5609 18.5509V15.3937L18.2829 11.7938V14.9502ZM12.5609 9.91541L18.2829 6.31541V9.47148L12.5609 13.0723V9.91541ZM5.71703 14.9502V11.7938L11.4382 15.3937V18.5509L5.71703 14.9502ZM11.4382 9.91541V13.0723L5.71703 9.47148V6.31541L11.4382 9.91541Z"/>
+              </svg>
+            } 
+          />
         </div>
       </section>
 
