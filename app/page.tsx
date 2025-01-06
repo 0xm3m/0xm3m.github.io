@@ -5,13 +5,13 @@ export default function About() {
   return (
     <div className="space-y-12">
       <section className="text-center">
-        <h1 className="text-4xl font-bold mb-4">About 0xm3m</h1>
-        <p className="text-xl text-gray-400">Defending the Digital Realm, One Vulnerability at a Time</p>
+        <h1 className="text-4xl font-bold mb-4">0xm3m</h1>
+        <p className="text-xl text-gray-400">Security Researcher</p>
       </section>
 
       <div className="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-12">
         <Image
-          src="/0xm3m.jpeg?height=300&width=300"
+          src="../0xm3m.jpeg?height=300&width=300"
           alt="0xm3m profile picture"
           width={300}
           height={300}
@@ -56,23 +56,15 @@ export default function About() {
           </li>
           <li className="flex items-center space-x-2">
             <span className="text-green-500">▹</span>
-            <span>Malware Analysis & Reverse Engineering</span>
-          </li>
-          <li className="flex items-center space-x-2">
-            <span className="text-green-500">▹</span>
             <span>Network & Web Application Security</span>
           </li>
           <li className="flex items-center space-x-2">
             <span className="text-green-500">▹</span>
-            <span>IoT & Embedded Systems Security</span>
+            <span>Source Code Analysis (White Box Testing)</span>
           </li>
           <li className="flex items-center space-x-2">
             <span className="text-green-500">▹</span>
-            <span>Incident Response & Digital Forensics</span>
-          </li>
-          <li className="flex items-center space-x-2">
-            <span className="text-green-500">▹</span>
-            <span>Security Awareness Training</span>
+            <span>Mobile Application Penetration Testing</span>
           </li>
         </ul>
       </section>
