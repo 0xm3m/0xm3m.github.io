@@ -36,7 +36,7 @@ export default function About() {
         <div className="space-y-6 max-w-2xl">
           <section>
             <h2 className="text-2xl font-bold mb-4">whoami</h2>
-            <p className="text-lg text-center">
+            <p className="text-lg text-justify">
               I'm 0xm3m, a passionate security researcher and ethical hacker with over a decade of experience in the cybersecurity field. My mission is to uncover vulnerabilities, strengthen digital defenses, and make the online world a safer place for everyone. With a background in computer science and a lifelong fascination with technology, I've dedicated my career to staying one step ahead of cybercriminals. My work spans various domains, from critical infrastructure protection to securing cutting-edge IoT devices. I specialize in penetration testing, vulnerability assessment, malware analysis, and incident response. My approach combines technical expertise with creative problem-solving, allowing me to identify and mitigate complex security threats effectively. When I'm not diving into code or hunting for vulnerabilities, I'm actively contributing to the cybersecurity community through blog posts, conference talks, and mentoring aspiring security professionals.
             </p>
           </section>
