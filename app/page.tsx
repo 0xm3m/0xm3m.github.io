@@ -27,7 +27,7 @@ export default function About() {
 
       <div className="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-12">
         <Image
-          src="/0xm3m.jpeg?height=300&width=300"
+          src="https://raw.githubusercontent.com/0xm3m/0xm3m.github.io/main/0xm3m.jpeg?height=300&width=300"
           alt="0xm3m profile picture"
           width={300}
           height={300}
